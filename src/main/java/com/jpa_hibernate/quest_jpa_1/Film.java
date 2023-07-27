@@ -18,6 +18,12 @@ public class Film {
   private String mainActor;
   private Date releaseDate;
 
+  public Film(String title,String mainActor,String releaseDate) {
+    this.title = title;
+    this.mainActor = mainActor;
+    this.releaseDate = Date.valueOf(releaseDate);
+  }
+
   public Long getId() {
     return id;
   }
